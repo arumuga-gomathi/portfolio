@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="top-nav">
+    <div class="logo"><i class="fa fa-home"></i></div>   
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills & Projects</a></li>
+      <li><a href="#experience">Experience</a></li>  
+    </ul>
+    <button id="mode-toggle" class="mode-toggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button> 
+  </nav>
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="card">
+          <span class="tag"><b>About Me</b></span>
+          <div class="profile-img">
+            <img src="me.jpg" alt="Profile Picture" />
+          </div>
+          <h2>Arumuga Gomathi -<br><span>Impactor</span></h2>
+          <div class="btn-row">
+            <a href="resume.pdf" download class="resume-btn">Resume</a>
+            <a href="https://medium.com/@r.arumugagomathi" target="_blank" class="medium-btn">Medium Blog</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="hero-right">
+        <div class="intro-box">
+          <b>Short Intro about me</b><br>
+         <br> ▸ I am an active listener, team player and always open for insightful conversations.<br>
+         <br> ▸ I am now a part of IMPACT training programme at psiog where I get to do practical assignments regularly.<br>
+         <br> ▸ I spend my time by watching movies, sports, geopolitics and generally everything around the world that's
+           happening also I love social gatherings, new beginnings or anything that groups people together.
+          <br>
+        </div>
+        <div class="contact-card">
+          <h4>Let's connect</h4>
+          <div class="social-icons">
+            <a href="mailto:r.arumugagomathi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/arumugagomathi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/arumuga-gomathi" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="education-section" id="education">
+    <div class="edu-header">
+      <i class="fas fa-graduation-cap"></i>
+      <h2>Education</h2>
+    </div>
+    <div class="edu-layout">
+      <div class="edu-left">
+        <div class="edu-block">
+          <span class="edu-label"><b>School</b></span>
+          <div class="edu-content"><b>Hilton Matriculation Higher Secondary School(Tenkasi)</b></div>
+          <br>
+          <p>Senior Secondary <br>SSLC-10th <br> Score: 93%</p>
+          <br>
+          <p>Higher Secondary <br>HSC-12th <br> Score: 72%</p>
+        </div>
+        <div class="edu-block">
+          <span class="edu-label"><b>College</b></span>
+          <div class="edu-content"><b>University College of Engineering, Anna University Campus(Thoothukkudi)</b></div>
+          <p><br>Electronics and Communications Engineering  CGPA - 7.5</p>
+        </div>
+      </div>
+      <div class="edu-right">
+        <div class="edu-block tall">
+          <span class="edu-label"><b>Extra-curricular Activities</b></span>
+           <br> <div class="edu-content">
+                <b>▸ Sports Enthusiast</b>
+                <br> Throughout my schooling ,I have been as a basketplayer and participated in various tournaments. 
+            In college, I have been active in table tennis, badminton and volleyball.<br>
+            
+            <br>
+                <b>▸ Community Volunteer</b> 
+                <br> I have collborated with various community events
+            both technical and non-technical from college days.
+            <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-section" id="skills">
+    <div class="skills-header">
+      <i class="fas fa-clipboard-list"></i>
+      <h2>Skills & Projects</h2>
+    </div>
+    <div class="skills-projects-layout">
+      <div class="skills-column"> 
+        <div class="skill-row">HTML, CSS, JavaScript</div>
+        <div class="skill-row">C#</div>
+        <div class="skill-row">Python</div>
+        <div class="skill-row">SQL</div>
+        <div class="skill-row">Cloud computing(AWS Services)</div>
+        <div class="skill-row">Linux system administration</div>
+      </div>
+      <div class="projects-column">
+        <div class="project-block">Project 1 - Image Classification Model using CNN and ML Classifiers for Fruit Disease identification</div>
+        <div class="project-block">Project 2 - Multithreading Concept followed C# console based report generating application</div>
+        <div class="project-block">Project 3 - Socket Programming based C# console based chat application</div>
+        <div class="project-block">Project 4 - Database Design of IPL TicketBooking and its CRUD operation performed using SQL Queries</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section" id="experience">
+    <div class="experience-header">
+      <i class="fas fa-briefcase"></i>
+      <h2>Experience</h2>
+    </div>
+    <div class="experience-entry">
+      <div class="experience-label" onclick="toggleExperience(this)">Psiog</div>
+      <div class="experience-description">
+        <p> <br>1) I am an Graduate Engineer trainee in PSIOG, I am in IMPACT Training Programme where the aim is gaining industry
+             level work experience through practical assignments by learning basic programming languages and various technologies.
+            <br>2) On successful completion of all phases in this IMPACT programme, one gets graduated from this programme. I am currently in 3 rd phase
+            and just started with this assignment of building web application using HTML,CSS and javascript.  
+        </p>
+      </div>
+    </div>
+    <div class="experience-entry">
+      <div class="experience-label" onclick="toggleExperience(this)">TCS ION</div>
+      <div class="experience-description">
+        <p> <br>1) I have been as a remote intern at TCS Ion in developing web application using AWS services.Also, worked on industry assignments that includes using S3, EC2 services.
+            <br>2) This internship was conducted by TCS Ion for over a span of 3 months and there
+            have been several modules to cover and a applied cloud computing course.
+        </p>
+      </div>
+    </div>
+    <div class="experience-entry">
+        <div class="experience-label" onclick="toggleExperience(this)">AWS WIT</div>
+        <div class="experience-description">
+          <p> <br>1) I am an active volunteer in AWS Women in Tech India and organized their programmes with a team of 10 members.
+              <br>2) As a part of these events, I have attended webinars, workshops by industry specific experts
+              and been as a core team member of the AWS WIT chennai.
+          </p>
+        </div>
+      </div>
+  </section>
+
+</body>
+</html>
